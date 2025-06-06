@@ -1,13 +1,8 @@
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f4f4f4;
-  margin: 0;
-}
+
 
 .contact-title {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 120px;
 }
 
 form {
@@ -30,7 +25,7 @@ input, textarea {
 form button {
   margin-top: 15px;
   padding: 10px 20px;
-  background: #007BFF;
+  background: #b700ff;
   color: white;
   border: none;
   border-radius: 5px;

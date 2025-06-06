@@ -51,8 +51,7 @@ body {
 
 /* Hero Section */
 .hero {
-  padding-top: 150px; /* Adjust to clear fixed header */
-  padding-bottom: 60px;
+  padding: 100px 10px;
   background-color: #f8f1ff;
 }
 
