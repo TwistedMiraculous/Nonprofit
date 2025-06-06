@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Mindful Vision Society</title>
+  <link rel="stylesheet" href="/index.css" />
+  <link rel="stylesheet" href="/Tabs/contact.css" /> <!-- New contact-specific CSS -->
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="/logo.png" alt="Mindful Vision Society" />
+    </div>
+    <nav class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/Tabs/Team.html">Meet the team</a>
+      <a href="/Tabs/Events.html">Events</a>
+      <a href="/Tabs/Projects.html">Projects</a>
+      <a href="/Tabs/Involed.html">Get involved</a>
+    </nav>
+    <button class="contact-button" onclick="location.href='/Tabs/Contactus.html'">
+      Contact Us
+    </button>
+  </header>
+
+  <h2 class="contact-title">Contact Us</h2>
+  <form action="https://formspree.io/f/yourFormID" method="POST">
+    <input type="text" name="name" placeholder="Your name" required />
+    <input type="email" name="email" placeholder="Your email" required />
+    <textarea name="message" placeholder="Your message" rows="6" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</body>
+</html>
