@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindful Vision Society</title>
+  <style>
+       /* Reset & fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, serif;
+  color: rgb(175, 18, 199);
+  text-align: center; /* center all text */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #a200c4;        /* purple tone */
+  font-weight: 500;
+}
+
+.contact-button {
+  background-color: #9d25ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="/img/logo.png" alt="Mindful Vision Society" />
+    </div>
+    <nav class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/Tabs/Team.html">Meet the team</a>
+      <a href="/Tabs/Events.html">Events</a>
+      <a href="/Tabs/Projects.html">Projects</a>
+      <a href="/Tabs/Involed.html">Get involved</a>
+    </nav>
+    <button class="contact-button" onclick="location.href='/Tabs/Contactus.html'">
+      Contact Us
+    </button>
+  </header>
+</body>
+</html>

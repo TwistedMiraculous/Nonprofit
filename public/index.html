@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindful Vision Society</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, serif;
+  color: rgb(175, 18, 199);
+  text-align: center; /* center all text */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #a200c4;        /* purple tone */
+  font-weight: 500;
+}
+
+.contact-button {
+  background-color: #9d25ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+  }
+
+.hero-content .text-box {
+  background-color: rgba(204, 0, 255, 0.129);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.386);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+  
+  .hero-content {
+    position: relative;
+    max-width: 700px;
+    padding: 50px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+    .section-divider {
+  border: none;
+  height: 2px;
+  background-color: #f2a365; /* soft orange or any accent color */
+  width: 80%;
+  margin: 40px auto;
+  opacity: 0.7;
+}
+
+.Mission {
+  background-color: #ffffff; /* soft light background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Mission h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #9d25ff;
+}
+
+.Mission p {
+  max-width: 800px;
+  margin: 0 auto 1.5em auto;
+  line-height: 1.8;
+  font-size: 18px;
+  color: #333;
+}
+
+.mission-vision-section {
+  background: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2em;
+  margin-bottom: 50px;
+  color: #b31ce6;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card .icon {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #666567;
+}
+
+.info-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #bf00ff;
+}
+
+.info-card p {
+  font-size: 1.05em;
+  line-height: 1.7;
+  color: #333333;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info-card {
+    width: 48%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="/img/logo.png" alt="Mindful Vision Society" />
+    </div>
+    <nav class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/Tabs/Team.html">Meet the team</a>
+      <a href="/Tabs/Events.html">Events</a>
+      <a href="/Tabs/Projects.html">Projects</a>
+      <a href="/Tabs/Involed.html">Get involved</a>
+    </nav>
+   <button class="contact-button" onclick="location.href='/Tabs/Contactus.html'">
+      Contact Us
+    </button>
+  </header>
+
+
+<!-- LINE BETWEEN SECTIONS -->
+<hr class="section-divider" />
+
+<section class="Mission">
+  <div class="overlay"></div>
+
+  <h2>Who We Are</h2>
+
+  <p>
+    Our team is made up of individuals who care deeply about mental health. We all have the desired goal of supporting individuals with mental health issues.
+    We have a large team of executives, from events and logistics coordinators to social media management and community outreach. Our team is committed to making a positive change and is dedicated to achieving the objectives of this organization.
+  </p>
+
+</section>
+
+<!-- LINE BETWEEN SECTIONS -->
+<hr class="section-divider" />
+
+<section class="mission-vision-section">
+  <h2 class="section-title">Our Mission and Vision</h2>
+  <div class="card-container">
+    <div class="info-card">
+      <div class="icon">🎯</div>
+      <h3>Our Mission</h3>
+      <p>
+        To provide compassionate resources and be the first point of contact for individuals facing mental health challenges, with a focus on supporting women’s well-being.
+      </p>
+    </div>
+    <div class="info-card">
+      <div class="icon">🌟</div>
+      <h3>Our Vision</h3>
+      <p>
+        To build a community where everyone feels loved, welcomed, and supported during their most difficult moments.
+      </p>
+    </div>
+  </div>
+</section>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyB6OCF_VaTWbyNpsgj56aFobfx8lr7Q88U",
+    authDomain: "mindful-vision-society.firebaseapp.com",
+    projectId: "mindful-vision-society",
+    storageBucket: "mindful-vision-society.firebasestorage.app",
+    messagingSenderId: "520617212230",
+    appId: "1:520617212230:web:0bf4fd099698756eaa0d47"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+</body>
+</html>
