@@ -12,7 +12,7 @@
 }
 body {
   font-family: Arial, serif;
-  color: rgb(175, 18, 199);
+  color: #8B6D7D;
   text-align: center; /* center all text */
 }
 
@@ -38,12 +38,12 @@ body {
 .nav-links a {
   margin: 0 15px;
   text-decoration: none;
-  color: #a200c4;        /* purple tone */
+  color: #74616B;        /* purple tone */
   font-weight: 500;
 }
 
 .contact-button {
-  background-color: #9d25ff;
+  background-color: #74616B;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -96,7 +96,7 @@ body {
 
 .Mission {
   background-color: #ffffff; /* soft light background */
-  padding: 200px 20px;
+  padding: 100px 20px;
   text-align: center;
 }
 
@@ -116,29 +116,64 @@ body {
 
 .mission-vision-section {
   background: #ffffff;
-  padding: 50px 20px;
+  padding: 120px 20px;
   text-align: center;
 }
+.mission-vision-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #9d25ff;
+}
+
+.mission-vision-section p, .mission-vision-section li {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.mission-vision-section li {
+  margin-bottom: 15px;
+}
+
 
   </style>
 </head>
 <body>
   <header class="navbar">
     <div class="logo">
-      <img src="/img/logo.png" alt="Mindful Vision Society" />
+      <img src="/public/img/logo.png" alt="Mindful Vision Society" />
     </div>
     <nav class="nav-links">
-      <a href="/index.html">Home</a>
-      <a href="/Tabs/Team.html">Meet the team</a>
-      <a href="/Tabs/Events.html">Events</a>
-      <a href="/Tabs/Projects.html">Projects</a>
-      <a href="/Tabs/Involed.html">Get involved</a>
+      <a href="/public/index.html">Home</a>
+      <a href="/public/Tabs/Team.html">Meet the team</a>
+      <a href="/public/Tabs/Events.html">Events</a>
+      <a href="/public/Tabs/Projects.html">Projects</a>
+      <a href="/public/Tabs/Involed.html">Get involved</a>
     </nav>
- <button class="contact-button" onclick="location.href='/Tabs/Contactus.html'">
+ <button class="contact-button" onclick="location.href='/public/Tabs/Contactus.html'">
       Contact Us
     </button>
   </header>
 </body>
+
+
+<section class="mission-vision-section">
+  <h2>What We Aim to Do</h2>
+  <p>
+    We aim to launch community workshops, create resource toolkits, and build partnerships
+    that support mental health. We are always working towards collaborating and partnering
+    with local community organizations to together create a positive impact.
+  </p>
+  <ul style="list-style: none; padding: 0; max-width: 800px; margin: 20px auto; text-align: left;">
+    <li><strong>🎨 Open Palette Event:</strong> A mental health-focused art event held once every 3 months.</li>
+    <li><strong>📚 Information Sessions:</strong> At least twice a year, featuring guest speakers and career exploration.</li>
+    <li><strong>🛠️ Resources Toolkit:</strong> A curated collection of support services organized by city.</li>
+    <li><strong>🌸 Community Healing Circles:</strong> Culturally relevant spaces for collective healing.</li>
+    <li><strong>🎁 Self-Care Kits:</strong> Annual distribution of journals, stress tools, and info sheets.</li>
+    <li><strong>👩 Women’s Wellness Workshops:</strong> Interactive pilot program on resilience, body positivity, and self-care.</li>
+  </ul>
+</section>
+
   <section class="Mission">
   <div class="overlay"></div>
 
@@ -150,3 +185,4 @@ body {
 
 </section>
 </html>
+
