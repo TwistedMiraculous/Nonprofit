@@ -1,89 +1,247 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Wellness Connect</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, serif;
+  color: #8B6D7D;
+  text-align: center; /* center all text */
+}
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.1.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.1.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.1.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+.logo img {
+  height: 80px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #74616B;        /* purple tone */
+  font-weight: 500;
+}
+
+.contact-button {
+  background-color: #74616B;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+  }
+
+.hero-content .text-box {
+  background-color: #74616B;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.386);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+  
+  .hero-content {
+    position: relative;
+    max-width: 700px;
+    padding: 50px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+    .section-divider {
+  border: none;
+  height: 2px;
+  background-color: #AD9FA6; /* soft orange or any accent color */
+  width: 80%;
+  margin: 40px auto;
+  opacity: 0.7;
+}
+
+.Mission {
+  background-color: #ffffff; /* soft light background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Mission h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #74616B;
+}
+
+.Mission p {
+  max-width: 800px;
+  margin: 0 auto 1.5em auto;
+  line-height: 1.8;
+  font-size: 18px;
+  color: #8B6D7D;
+}
+
+.mission-vision-section {
+  background: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2em;
+  margin-bottom: 50px;
+  color: #74616B;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card .icon {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #AD9FA6;
+}
+
+.info-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #8B6D7D;
+}
+
+.info-card p {
+  font-size: 1.05em;
+  line-height: 1.7;
+  color: #8B6D7D;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info-card {
+    width: 48%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="/img/logo.png" alt="Mindful Vision Society" />
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <nav class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/Tabs/Team.html">Meet the team</a>
+      <a href="/Tabs/Events.html">Events</a>
+      <a href="/Tabs/Projects.html">Projects</a>
+      <a href="/Tabs/Involed.html">Get involved</a>
+    </nav>
+    <button class="contact-button" onclick="location.href='/Tabs/Contactus.html'">
+      Contact Us
+    </button>
+  </header>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+<!-- LINE BETWEEN SECTIONS -->
+<hr class="section-divider" />
+
+<section class="Mission">
+  <div class="overlay"></div>
+
+  <h2>Who We Are</h2>
+
+  <p>
+    Our team is made up of individuals who care deeply about mental health. We all have
+the desired goal of supporting individuals with mental health issues. We have a large
+team of executives from events and logistics coordinator to social media
+management and community outreach; our team is committed to making a positive
+change and is dedicated to achieving the objectives of this organization.
+  </p>
+
+</section>
+
+<!-- LINE BETWEEN SECTIONS -->
+<hr class="section-divider" />
+
+<section class="mission-vision-section">
+  <h2 class="section-title">Our Mission and Vision</h2>
+  <div class="card-container">
+    <div class="info-card">
+      <div class="icon">🎯</div>
+      <h3>Our Mission</h3>
+      <p>
+        Women’s Wellness Connect is a nonprofit organization dedicated to being the first
+point of contact for women seeking mental health support. We provide accessible
+resources, compassionate guidance, and community-centered programs to ensure
+every woman feels seen, heard, and supported on her journey to healing.
+      </p>
+    </div>
+    <div class="info-card">
+      <div class="icon">🌟</div>
+      <h3>Our Vision</h3>
+      <p>
+       We envision a world where every woman has access to mental health care,
+feels connected to a supportive community, and can thrive with confidence and
+resilience.
+      </p>
+    </div>
+  </div>
+</section>
+
+</body>
 </html>

@@ -16,5 +16,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MINDFUL_VISION_SOCIETY }}
-          projectId: mindful-vision-society
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_WOMEN_S_WELLNESS_CONNECT }}
+          projectId: women-s-wellness-connect
