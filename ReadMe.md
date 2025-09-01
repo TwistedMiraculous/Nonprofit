@@ -16,4 +16,4 @@ This was my first real-world project made for someone else. I created it to help
 - **What I Learned:**  
   - How to deploy with Firebase  
   - The importance of clear navigation and layout in web design  
-  - Communication skills—listening to feedback and adjusting the design to fit the nonprofit’s goals  
+  - Communication skills, listening to feedback and adjusting the design to fit the nonprofit’s goals  
